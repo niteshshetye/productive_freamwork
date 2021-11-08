@@ -70,3 +70,25 @@
     letter-spacing: 2px;
     font-size: 1rem;
 }
+.task4_container{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.task4_heading{
+    margin-bottom: 10px;
+}
+.task4_details{
+    width: 50vw;
+    font-size: 1rem;
+    padding: 20px;
+    text-align: justify;
+}
+.task4_details h4{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px 0px;
+}
