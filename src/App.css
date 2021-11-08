@@ -42,3 +42,31 @@
     color: red;
     padding-left: 10px;
 }
+
+.task3_container{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    align-items: center;
+}
+.task3_body{
+    padding: 20px 30px;
+    font-size: 3rem;
+}
+.task3_oprations{
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+}
+.task3_oprations button{
+    margin-left: 20px;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: coral;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
