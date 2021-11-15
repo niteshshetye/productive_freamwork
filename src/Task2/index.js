@@ -1,4 +1,10 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+
+// toster
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+// component
 import Form from './Form';
 import Button from './Button';
 
@@ -38,9 +44,22 @@ const Task2 = () => {
         }else if(values.password){
             const matching = values.password.match(passwordRegEx);
             if(matching === null) {
-                errors = {password: 'Password must be grater than 3 charecters', ...errors}
+                errors = {password: 'Password is to weak', ...errors}
             }
         }
+        const inputErrors = Object.keys(errors);
+        inputErrors.length !== 0 && inputErrors.map(inputError => (
+            toast.error(errors[inputError],{
+                position: "top-right",
+                autoClose: 1500,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: false,
+                progress: undefined,
+            })
+        ))
+        console.log('handleValidation', errors)
         return errors
     }
     const handleEnter = e => {
@@ -50,17 +69,38 @@ const Task2 = () => {
     }
     const handleSubmit = e => {
         e.preventDefault();
-        setFormError(handleValidation(formValues, formTouched))
-        if(Object.keys(formError).length !== 0){
-            console.log('Check Feild Values')
+        const isErrorPresent = handleValidation(formValues, formTouched)
+        setFormError(isErrorPresent)
+        const inputErrors = Object.keys(isErrorPresent)
+        console.log('', inputErrors)
+        if(inputErrors.length !== 0){
+            return toast.error('Please fill the form',{
+                position: "top-right",
+                autoClose: 1500,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: false,
+                progress: undefined,  
+            })
         }else{
             console.log('Form Submited');
+            toast.success('Logged In succefull',{
+                position: "top-right",
+                autoClose: 1500,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: false,
+                progress: undefined,
+            })
         }
     }
     return (
         <div className='task2_container'>
             {/* <pre>{ JSON.stringify(formValues, undefined, 3)}</pre>
             <pre>{ JSON.stringify(formError, undefined, 3)}</pre> */}
+            <ToastContainer />
             <form className='form_validation'>
                 <div className='form_heading'>
                     <h2>Login</h2>

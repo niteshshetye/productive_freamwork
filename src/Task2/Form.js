@@ -1,6 +1,6 @@
 import React from 'react'
 import Input from './Input'
-import Error from './Error'
+// import Error from './Error'
 
 const Form = ({values, touched, errors, handleChange, handleEnter}) => {
     return (
@@ -11,7 +11,7 @@ const Form = ({values, touched, errors, handleChange, handleEnter}) => {
                 handleChange={handleChange} 
                 handleEnter={handleEnter}  
             />
-            <Error touched={touched.username} error={errors.username} />
+            {/* <Error touched={touched.username} error={errors.username} /> */}
             <Input 
                 type='email' 
                 name='email' 
@@ -19,7 +19,7 @@ const Form = ({values, touched, errors, handleChange, handleEnter}) => {
                 handleChange={handleChange} 
                 handleEnter={handleEnter} 
             />
-            <Error touched={touched.email} error={errors.email} />
+            {/* <Error touched={touched.email} error={errors.email} /> */}
             <Input 
                 type='password' 
                 name='password' 
@@ -27,7 +27,7 @@ const Form = ({values, touched, errors, handleChange, handleEnter}) => {
                 handleChange={handleChange} 
                 handleEnter={handleEnter} 
             />
-            <Error touched={touched.password} error={errors.password} />
+            {/* <Error touched={touched.password} error={errors.password} /> */}
         </div>
     )
 }
