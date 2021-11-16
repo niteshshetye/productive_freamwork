@@ -64,13 +64,67 @@ import './App.css'
 // import Task8 from './Task8'
 // json server create in Folder db -> db.json
 
-// ************************** Task 8 **************************
-import Task9 from './Task9'
+// ************************** Task 9 **************************
+// import Task9 from './Task9'
+
+// ************************** Task 10 **************************
+// import Task10 from './Task10';
+
+// ************************** Task 11 **************************
+// import { Routes, Route, NavLink } from 'react-router-dom'
+// import Count from './Task11/Count'
+// import Person from './Task11/Person'
+// // import { ErrorBoundary } from './Task11/ErrorBoundary'
+// import { ErrorBoundary } from 'react-error-boundary'
+// import FallBackUI from './Task11/FallBackUI'
+
+// const person = {firstName: 'nitesh', lastName: 'shetye'}
+// const ErrorHandler = (error, errorInfo) =>{
+//     console.log(error, errorInfo)
+// }
+/* 
+    <div className='task11_nav_div'>
+        <ul className='task11_nav_ul'>
+            <li><NavLink to='/person' className='task11_nav_li_a'>Person</NavLink></li>
+            <li><NavLink to='/' className='task11_nav_li_a'>Counter</NavLink></li>
+        </ul>
+    </div>
+    <Routes>
+        <Route path='/person' element={
+                // here i not passed person object which 
+                // is required in person component
+                <ErrorBoundary 
+                    FallbackComponent={FallBackUI}
+                    onError={ErrorHandler}
+                >
+                    <Person  /> 
+                </ErrorBoundary>
+            } 
+        />
+
+        <Route path='/' element={
+                <ErrorBoundary
+                    FallbackComponent={FallBackUI}
+                    onError={ErrorHandler}
+                >
+                    <Count />
+                </ErrorBoundary>
+            }
+        />
+    </Routes> 
+*/
+
+// ************************** Task 13 **************************
+// import Task13 from './Task13'
+
+// ************************** Task 14 **************************
+import Task14 from './Task14'
+
 
 const App = () => {
     return (
         <>
-            <Task9 />
+            <Task14 />
         </>
     )
 }

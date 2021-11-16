@@ -322,3 +322,190 @@
 .task9_postDiv h2{
     margin-bottom: 20px;
 }
+
+.task10_container{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+    align-items: center;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+.task10_heading{
+    padding: 15px;
+    font-size: 1.5rem;
+    color: rgb(73, 60, 42);
+    letter-spacing: 2px;
+}
+.task10_heading_h1{
+    font-weight: 300;
+    border-bottom: 1px solid black;
+}
+
+.task10_body{
+    padding: 20px;
+    width: 80%;
+}
+
+
+.task10_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task10_input{
+    height: 4rem;
+    margin: 5px;
+    width: 100%;
+}
+
+.task10_input input{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    margin: 2px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 0.5px solid black;
+}
+.task10_input input:focus{
+    border: 1px solid rgb(51, 190, 255);
+}
+
+.task10_btn, .btn10{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+}
+
+.btn10{
+    border: 1px solid rgba(3, 102, 214, 0.3);
+    cursor: pointer;
+    font-weight: 600;
+    color: rgb(73, 60, 42);
+    font-size: 1rem;
+    background-color: rgba(3, 102, 214, 0.3);
+    letter-spacing: 2px;
+    transition: all 0.5s ease;
+}
+
+.btn10:hover{
+    background-color: rgba(129, 172, 221, 0.3);
+    color: black;
+}
+.task11_nav_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+.task11_nav_ul{
+    list-style: none;
+    display: flex;
+}
+.task11_nav_ul li{
+    padding: 10px;
+    margin: 0px 10px;
+}
+.task11_nav_li_a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: all 1s ease;
+}
+
+.task11_nav_li_a:hover{
+    background-color: black;
+    color: white;
+}
+
+.task11_count_div, .task11_person_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-direction: column;
+}
+.task11_count_heading{
+    font-size: 1.3rem;
+}
+
+.task11_count_btn button{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin: 10px 0px;
+}
+
+.task11_fallback_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.task13_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.task13_add_form{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin: 30px 0px;
+    padding: 30px;
+    display: flex;
+}
+.task13_add_form form {
+    display: flex;
+    flex-direction: column;
+}
+.task13_add_input input{
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0px;
+    font-size: 1rem;
+}
+.task13_add_btn button{
+    padding: 5px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+    letter-spacing: 2px;
+    color: white;
+    background-color: rgb(36, 36, 36);
+}
+
+.task13_developer_table{
+    display: flex;
+    font-size: 1.2rem;
+}
+.task13_developer_table table{
+    text-align: center;
+    padding: 20px;
+}
+.task13_developer_table table thead tr th{
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+.task13_developer_table table tbody tr td{
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+.task13_developer_table table tbody tr td button{
+    padding: 5px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+    letter-spacing: 2px;
+    color: white;
+    background-color: rgb(36, 36, 36);
+}
+
+

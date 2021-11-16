@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 export default class Count extends Component {
+    // excute before rendering the component
     constructor(props){
         super(props);
         this.state = {
@@ -11,6 +12,7 @@ export default class Count extends Component {
     }
 
     componentDidMount(){
+        // execute after the component mount on UI
         console.log('Component Did Mount Execute...!')
     }
     
@@ -21,13 +23,16 @@ export default class Count extends Component {
 
     
     componentDidUpdate(prevState){
+        // Execute after state change and re-render the component
         console.log('Component Did Update Execute...!', prevState)
     }
 
     componentWillUnmount(){
+        // Excute just before component un-mount
         console.log('Component(Count) Will Unmount Execute...!');
     }
     render() {
+        // Excute after constructor
         console.log('Render Execute...!')
         return (
             <div className='task9_countDiv'>
