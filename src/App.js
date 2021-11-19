@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 
+import Task1 from './Task1'
 // import Task2 from './Task2'
 // import Task3 from './Task3'
 // import Task4 from './Task4'
@@ -118,13 +119,15 @@ import './App.css'
 // import Task13 from './Task13'
 
 // ************************** Task 14 **************************
-import Task14 from './Task14'
+// import Task14 from './Task14'
 
+// ************************** Task 16 **************************
+// import Task16 from './Task16'
 
 const App = () => {
     return (
         <>
-            <Task14 />
+            <Task1 />
         </>
     )
 }

@@ -472,6 +472,7 @@
     padding: 5px;
     font-size: 1rem;
     outline: none;
+    margin-top: 10px;
     border: 1px solid black;
     cursor: pointer;
     letter-spacing: 2px;
@@ -508,4 +509,11 @@
     background-color: rgb(36, 36, 36);
 }
 
+.task16_chart{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 720px;
+    padding: 20px;
+}
 
